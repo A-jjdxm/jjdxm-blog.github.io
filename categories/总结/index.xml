@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>总结 on 进击的小明博客</title>
-        <link>https://a-jjdxm.github.io/jjdxm-blog.github.io/categories/%E6%80%BB%E7%BB%93/</link>
+        <link>https://www.jjdxm.cn/categories/%E6%80%BB%E7%BB%93/</link>
         <description>Recent content in 总结 on 进击的小明博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>进击的小明</copyright>
-        <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://a-jjdxm.github.io/jjdxm-blog.github.io/categories/%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jjdxm.cn/categories/%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>hugo博客网站</title>
-        <link>https://a-jjdxm.github.io/jjdxm-blog.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
+        <link>https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
         <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://a-jjdxm.github.io/jjdxm-blog.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
-        <description>&lt;img src="https://a-jjdxm.github.io/jjdxm-blog.github.io/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/hugo.png" alt="Featured image of post hugo博客网站" /&gt;&lt;p&gt;在漫长的学习和工作之路中，难免会有一些技术问题和心得。正所谓好记性不如烂笔头。在朋友的介绍hugo后可以快速便捷的搭建自己的静态网站。于是笔者决定搭建自己的博客网站。&lt;/p&gt;
+        <guid>https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
+        <description>&lt;img src="https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/hugo.png" alt="Featured image of post hugo博客网站" /&gt;&lt;p&gt;在漫长的学习和工作之路中，难免会有一些技术问题和心得。正所谓好记性不如烂笔头。在朋友的介绍hugo后可以快速便捷的搭建自己的静态网站。于是笔者决定搭建自己的博客网站。&lt;/p&gt;
 &lt;p&gt;本博客网站是基于&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo&lt;/a&gt;生成的&lt;/p&gt;
 &lt;ol&gt;

@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://a-jjdxm.github.io/jjdxm-blog.github.io/en/categories/</loc>
+    <loc>https://www.jjdxm.cn/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/categories/"
+                href="https://www.jjdxm.cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/ar/categories/"
+                href="https://www.jjdxm.cn/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/en/categories/"
+                href="https://www.jjdxm.cn/en/categories/"
                 />
   </url><url>
-    <loc>https://a-jjdxm.github.io/jjdxm-blog.github.io/en/</loc>
+    <loc>https://www.jjdxm.cn/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/"
+                href="https://www.jjdxm.cn/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/ar/"
+                href="https://www.jjdxm.cn/ar/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/en/"
+                href="https://www.jjdxm.cn/en/"
                 />
   </url><url>
-    <loc>https://a-jjdxm.github.io/jjdxm-blog.github.io/en/tags/</loc>
+    <loc>https://www.jjdxm.cn/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/tags/"
+                href="https://www.jjdxm.cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ar"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/ar/tags/"
+                href="https://www.jjdxm.cn/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://a-jjdxm.github.io/jjdxm-blog.github.io/en/tags/"
+                href="https://www.jjdxm.cn/en/tags/"
                 />
   </url>
 </urlset>
