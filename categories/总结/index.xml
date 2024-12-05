@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>总结 on 进击的小明博客</title>
+        <link>https://example.com/categories/%E6%80%BB%E7%BB%93/</link>
+        <description>Recent content in 总结 on 进击的小明博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>进击的小明</copyright>
+        <lastBuildDate>Thu, 05 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>hugo博客网站</title>
+        <link>https://example.com/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
+        <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
+        <description>&lt;img src="https://example.com/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/hugo.png" alt="Featured image of post hugo博客网站" /&gt;&lt;p&gt;在漫长的学习和工作之路中，难免会有一些技术问题和心得。正所谓好记性不如烂笔头。在朋友的介绍hugo后可以快速便捷的搭建自己的静态网站。于是笔者决定搭建自己的博客网站。&lt;/p&gt;
+&lt;p&gt;本博客网站是基于&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo&lt;/a&gt;生成的&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;快速静态网站生成器&lt;/strong&gt;：Hugo 能够将内容转换为 HTML 文件，与动态网站生成器不同，Hugo 在创建内容时就完成页面的构建，而不是每次用户请求时都动态生成页面。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;跨平台运行&lt;/strong&gt;：Hugo 可以在多种操作系统上运行，包括 Mac OS X、Linux、Windows 等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主题支持&lt;/strong&gt;：Hugo 支持完整的主题系统，允许用户通过更换主题来改变网站的外观。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内容管理&lt;/strong&gt;：Hugo 支持 Markdown 语法，使得内容编写变得简单，同时也支持 TOML、YAML 和 JSON 格式的元数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署灵活性&lt;/strong&gt;：Hugo 生成的网站可以部署在任何平台上，包括 Heroku、GoDaddy、DreamHost、GitHub Pages、Google Cloud Storage、Amazon S3 和 CloudFront 等，并且与 CDN 良好协作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;无依赖&lt;/strong&gt;：Hugo 网站不需要依赖昂贵的运行时环境，如 Ruby、Python 或 PHP，也不需要数据库。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;本网站选用的主题是&lt;a class=&#34;link&#34; href=&#34;https://g1en.site/hugo-theme-dream/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;dream&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;快来搭建自己的博客网站！！！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

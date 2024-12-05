@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>心得 on 进击的小明博客</title>
+        <link>http://localhost:1313/categories/%E5%BF%83%E5%BE%97/</link>
+        <description>Recent content in 心得 on 进击的小明博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>进击的小明</copyright><atom:link href="http://localhost:1313/categories/%E5%BF%83%E5%BE%97/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>
