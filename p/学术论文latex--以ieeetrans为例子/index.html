@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第一次写学术论文套用IEEEtrans模板以及一些踩坑的地方">
+<title>学术论文latex--以IEEEtrans为例子</title>
+
+<link rel='canonical' href='https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="学术论文latex--以IEEEtrans为例子">
+<meta property='og:description' content="第一次写学术论文套用IEEEtrans模板以及一些踩坑的地方">
+<meta property='og:url' content='https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/'>
+<meta property='og:site_name' content='进击的小明博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='og:image' content='https://www.jjdxm.cn/IEEE.png' />
+<meta name="twitter:title" content="学术论文latex--以IEEEtrans为例子">
+<meta name="twitter:description" content="第一次写学术论文套用IEEEtrans模板以及一些踩坑的地方"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.jjdxm.cn/IEEE.png' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu3923821688228672538.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">进击的小明博客</a></h1>
+            <h2 class="site-description">在对未来迷茫的时候，不如做好当前正确的事情</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://blog.csdn.net/m0_66479801'
+                        target="_blank"
+                        title="CSDN"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com/A-jjdxm'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于我</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://www.jjdxm.cn/en/" >English</option>
+                                
+                                    <option value="https://www.jjdxm.cn/" selected>中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#准备工作">准备工作</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#latrex下载">LATREX下载</a></li>
+            <li><a href="#论文latex模板下载以ieeetrans为例">论文LATEX模板下载(以IEEEtrans为例)</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#latex论文撰写">LATEX论文撰写</a>
+      <ol>
+        <li>
+          <ol>
+            <li><a href="#图片">图片</a></li>
+            <li><a href="#表格">表格</a></li>
+            <li><a href="#算法">算法</a></li>
+            <li><a href="#列表">列表</a></li>
+            <li><a href="#公式">公式</a></li>
+            <li><a href="#参考文献">参考文献</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#总结">总结</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/">
+                
+                    <img src="/IEEE.png" loading="lazy" alt="Featured image of post 学术论文latex--以IEEEtrans为例子" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%80%BB%E7%BB%93/" style="background-color: #2a9d8f; color: #fff;">
+                总结
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/">学术论文latex--以IEEEtrans为例子</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            第一次写学术论文套用IEEEtrans模板以及一些踩坑的地方
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 10 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="背景">背景
+</h2><p>笔者第一次写学术论文，其研究方向是弹性光网络，本次投递的期刊是JLT。在后续调整论文格式时候使用LATEX来写。而本文主要描述了在<strong>使用LATEX写论文</strong>时候，一些论文注意细节和LATEX的使用用法。以便帮助后续学弟和学妹们更快的完成论文的撰写。</p>
+<h2 id="准备工作">准备工作
+</h2><h4 id="latrex下载">LATREX下载
+</h4><p><a class="link" href="https://blog.csdn.net/Nicolecocol/article/details/136968456"  target="_blank" rel="noopener"
+    >【LaTex】LaTex的下载与安装（2024新手小白超详细、超简洁 Windows系统）_latex下载-CSDN博客</a></p>
+<p>安装完成后会有下面两个软件：</p>
+<blockquote>
+<p><strong>texlive:</strong> LATEX本体，负责编译.tex文件，并生成对应的.pdf文件</p>
+<p><strong>TexStudio：</strong> 编写.tex文件的编辑器(类似于代码编辑，还有许多其他的编辑器可以自行下载如<a class="link" href="https://cn.overleaf.com/"  target="_blank" rel="noopener"
+    >Overleaf, 在线LaTeX编辑器</a>)。</p>
+</blockquote>
+<h4 id="论文latex模板下载以ieeetrans为例">论文LATEX模板下载(以IEEEtrans为例)
+</h4><p><a class="link" href="https://template-selector.ieee.org/secure/templateSelector/publicationType"  target="_blank" rel="noopener"
+    >IEEE-Template Selector</a></p>
+<p>IEEE里面的期刊通过上述链接选择对应的期刊下载LATEX模板。如果不是，则百度对应的期刊名到官网下载对应的LATEX模板。</p>
+<p>这里我选择的是<strong>Journal of Lightwave Technology</strong>期刊的LATEX模板<strong>IEEEtrans</strong>。下载内容如下图：</p>
+<p><img src="/latex_catogarey.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="latex_catogarey"
+	
+	
+></p>
+<p><strong>IEEEtran.cls</strong>提供给模板的接口，<strong>bare_jrnl_new_sample4.tex</strong>是IEEEtrans对应的期刊的latex模板，点击打开bare_jrnl_new_sample4.tex并选择<strong>pdfLaTex</strong>编译运行，则会输出对应的pdf。(笔者是用latex自带的Texwork打开的，可以用其它编辑器打开)</p>
+<p><img src="/latex_sample.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="latex_sample"
+	
+	
+></p>
+<h2 id="latex论文撰写">LATEX论文撰写
+</h2><p>一篇论文的结构在模板里面已经非常清晰了，文件里面的头文件基本上不用变化。只需找到模板中对应的代码段(title, abstract, author, IEEEkeywords, section, subsection, &hellip;)把内容填进去。如果有什么不懂的可以百度或者查看目录下面的New_IEEEtran_how-to.pdf帮助文档，笔者这里主要介绍一些需要自定义并且可能会出现问题的地方。</p>
+<h4 id="图片">图片
+</h4><p>为了方便管理图片，这里我这里把整篇论文要用到的图片都放在模板路径下面的figures文件夹里，然后再模板文件中**\begin{document}<strong>上一行加入</strong>\graphicspath{{figures/}}**，这样就规定了图片的路径。</p>
+<p><img src="/latex_catogarey1.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="latex_catogarey1"
+	
+	
+></p>
+<p><strong>要在论文中插入一张图片代码如下：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[t]
+</span></span><span class="line"><span class="cl"><span class="k">\centering</span>
+</span></span><span class="line"><span class="cl"><span class="k">\includegraphics</span><span class="na">[width=0.5\textwidth]</span><span class="nb">{</span>fig1.pdf<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\caption</span><span class="nb">{</span>Co-propagation and Counter-propagation<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\label</span><span class="nb">{</span>fig1<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>[t]</strong>：表示将当前图片放置在当前页面的顶部(h当前位置，b表示底部&hellip;)</p>
+<p><strong>\centering</strong>：表示图片居中</p>
+<p><strong>width=0.5\textwidth</strong>：表示设置图片的宽度为半个页面宽度(注：这里没有设置高度所以会保持长宽的比例)</p>
+<p><strong>fig1.pdf</strong>：表示插入的图片文件名，上面已经设置好图片的路径，所以这里直接填入文件名就行</p>
+<p><strong>\caption</strong>：设置图片的标题</p>
+<p><strong>\label{fig1}</strong>：设置图片的唯一标志，为了方便文中引用该图片。这里笔者设置的名称是fig1，使用\ref{fig1}便可以引用</p>
+<p><img src="/fig1.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="fig1"
+	
+	
+></p>
+<p><strong>要在论文中插入多张图片代码如下(竖排)：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[!t]
+</span></span><span class="line"><span class="cl"><span class="k">\centering</span>
+</span></span><span class="line"><span class="cl"><span class="k">\subfloat</span><span class="na">[Performance comparisons in NSFNET]</span><span class="nb">{</span> 
+</span></span><span class="line"><span class="cl"><span class="k">\includegraphics</span><span class="na">[width=0.4\textwidth]</span><span class="nb">{</span>gN1A.pdf<span class="nb">}</span><span class="c">%
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\label</span><span class="nb">{</span>BBPa<span class="nb">}</span> 
+</span></span><span class="line"><span class="cl"><span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hfil</span>
+</span></span><span class="line"><span class="cl"><span class="k">\subfloat</span><span class="na">[Performance comparisons in COST239]</span><span class="nb">{</span>
+</span></span><span class="line"><span class="cl"><span class="k">\includegraphics</span><span class="na">[width=0.4\textwidth]</span><span class="nb">{</span>gN2A.pdf<span class="nb">}</span><span class="c">%
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\label</span><span class="nb">{</span>BBPb<span class="nb">}</span> 
+</span></span><span class="line"><span class="cl"><span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\caption</span><span class="nb">{</span>Performance comparisons on blocking probability among the conventional PCMSA, BI-PCMSA, and BI-CI schemes and the BCSRA scheme in (a) NSFNET and (b) COST239 network.<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\label</span><span class="nb">{</span>BBP<span class="nb">}</span> 
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>！t</strong>:系统忽略“美学”标准，放置在顶部(这里加不加！感觉没有上面区别)</p>
+<p><strong>\hfil</strong>：填充两张图片中间的空白</p>
+<p><strong>\subfloat</strong>：设置子图</p>
+<p><img src="/fig2.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="fig2"
+	
+	
+></p>
+<p><strong>要在论文中插入多张图片代码如下(横排)：</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>figure*<span class="nb">}</span>[!t]
+</span></span><span class="line"><span class="cl"><span class="k">\centering</span>
+</span></span><span class="line"><span class="cl"><span class="k">\subfloat</span><span class="na">[]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[width=2.5in]</span><span class="nb">{</span>fig1.png<span class="nb">}</span><span class="c">%
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\label</span><span class="nb">{</span>fig<span class="nb">_</span>first<span class="nb">_</span>case<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hfil</span>
+</span></span><span class="line"><span class="cl"><span class="k">\subfloat</span><span class="na">[]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[width=2.5in]</span><span class="nb">{</span>fig1.png<span class="nb">}</span><span class="c">%
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\label</span><span class="nb">{</span>fig<span class="nb">_</span>second<span class="nb">_</span>case<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\\</span>
+</span></span><span class="line"><span class="cl"><span class="k">\subfloat</span><span class="na">[]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[width=2.5in]</span><span class="nb">{</span>fig1.png<span class="nb">}</span><span class="c">%
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\label</span><span class="nb">{</span>fig<span class="nb">_</span>first<span class="nb">_</span>case<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hfil</span>
+</span></span><span class="line"><span class="cl"><span class="k">\subfloat</span><span class="na">[]</span><span class="nb">{</span><span class="k">\includegraphics</span><span class="na">[width=2.5in]</span><span class="nb">{</span>fig1.png<span class="nb">}</span><span class="c">%
+</span></span></span><span class="line"><span class="cl"><span class="c"></span><span class="k">\label</span><span class="nb">{</span>fig<span class="nb">_</span>second<span class="nb">_</span>case<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\caption</span><span class="nb">{</span>Dae. Ad quatur autat ut porepel itemoles dolor autem fuga. Bus quia con nessunti as remo di quatus non perum que nimus. (a) Case I. (b) Case II.<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\label</span><span class="nb">{</span>fig<span class="nb">_</span>sim<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>figure*<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em><em>\begin{figure</em>}</em>*：设置跨栏的图片</p>
+<p><strong>\hfil</strong>：填充两张图片中间的空白</p>
+<p><strong>\\</strong>：图片换行</p>
+<p><img src="/fig3.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="fig3"
+	
+	
+></p>
+<h4 id="表格">表格
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[!b]
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\caption</span><span class="nb">{</span>Flow of Lightpath Requests in Fig. <span class="k">\ref</span><span class="nb">{</span>fig2<span class="nb">}</span>(a)<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\label</span><span class="nb">{</span>tab2<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\arraystretch</span><span class="nb">}{</span>1.5<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\setlength</span><span class="nb">{</span><span class="k">\tabcolsep</span><span class="nb">}{</span>8pt<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\resizebox</span><span class="nb">{</span>0.5<span class="k">\textwidth</span><span class="nb">}{</span>!<span class="nb">}{</span>
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>| c | c | c | c | c | c | c |<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hline</span>
+</span></span><span class="line"><span class="cl">request <span class="nb">&amp;</span> route <span class="nb">&amp;</span> e1 <span class="nb">&amp;</span> e2 <span class="nb">&amp;</span> e3 <span class="nb">&amp;</span> e4 <span class="nb">&amp;</span> e5<span class="k">\\</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hline</span>
+</span></span><span class="line"><span class="cl"><span class="s">$</span><span class="nb">R_</span><span class="m">1</span><span class="s">$</span> <span class="nb">&amp;</span> 1-2-4 <span class="nb">&amp;</span> 1 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> 1 <span class="nb">&amp;</span> 0<span class="k">\\</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hline</span>
+</span></span><span class="line"><span class="cl"><span class="s">$</span><span class="nb">R_</span><span class="m">2</span><span class="s">$</span> <span class="nb">&amp;</span> 2-3-1 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> -1 <span class="nb">&amp;</span> 1 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> 0<span class="k">\\</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hline</span>
+</span></span><span class="line"><span class="cl"><span class="s">$</span><span class="nb">R_</span><span class="m">3</span><span class="s">$</span> <span class="nb">&amp;</span> 4-3 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> 0 <span class="nb">&amp;</span> -1<span class="k">\\</span>
+</span></span><span class="line"><span class="cl"><span class="k">\hline</span> 
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>\begin{table}[!b]：设置表格为页面底部
+\begin{center}：表格居中</p>
+<p>\caption：表格标题</p>
+<p>\renewcommand{\arraystretch}{1.5}：设置表格的行距为1.5倍</p>
+<p>\setlength{\tabcolsep}{8pt}：设置表格的列宽</p>
+<p>\resizebox{0.5\textwidth}{!}：设置表格宽的大小为半个页面大小，并保持长宽比例</p>
+<p>\begin{tabular}：设置表格的形式，上述代码“<strong>|</strong>”设置表格的竖线(c表示单元格内水平对齐，l表示单元格左对齐&hellip;, )，“<strong>\hline</strong>”设置表格的横线。然后将内容填入表格，”&amp;“表示水平下一列，”\\“表示下一行</p>
+<p>如果想单独设置表格某一列的列宽可以使用<strong>p{xx}</strong>，下面就是设置第二列的列宽为6cm</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>| l | p<span class="nb">{</span>6cm<span class="nb">}</span>|<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/table.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20250218215507591"
+	
+	
+></p>
+<h4 id="算法">算法
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>algorithm<span class="nb">}</span>[!b]
+</span></span><span class="line"><span class="cl"><span class="k">\caption</span><span class="nb">{</span>Analysis of bidirectional spectrum resource.<span class="nb">}</span><span class="k">\label</span><span class="nb">{</span>alg:alg2<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\algorithmicrequire</span><span class="nb">}{</span><span class="k">\textbf</span><span class="nb">{</span>Input:<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\renewcommand</span><span class="nb">{</span><span class="k">\algorithmicensure</span><span class="nb">}{</span><span class="k">\textbf</span><span class="nb">{</span>Output:<span class="nb">}}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>algorithmic<span class="nb">}</span>[1]
+</span></span><span class="line"><span class="cl"><span class="k">\REQUIRE</span> The core <span class="s">$</span><span class="nb">C</span><span class="s">$</span> and frequency slot position <span class="s">$</span><span class="nb">f</span><span class="s">$</span> of the lightpath, and the link information of the request, information of the request
+</span></span><span class="line"><span class="cl"><span class="k">\ENSURE</span> <span class="s">$</span><span class="nb">Flag</span><span class="s">$</span> and <span class="s">$</span><span class="nb">CIFA</span><span class="s">$</span>
+</span></span><span class="line"><span class="cl"><span class="k">\STATE</span> <span class="s">$</span><span class="nb">Flag</span><span class="o">=</span><span class="m">0</span><span class="nb">, CI</span><span class="o">=</span><span class="m">0</span><span class="nb">, free</span><span class="nv">\_</span><span class="nb">slot</span><span class="o">=</span><span class="m">0</span><span class="s">$</span>.
+</span></span><span class="line"><span class="cl"><span class="k">\STATE</span> Temporarily modify the link information of the current lightpath.
+</span></span><span class="line"><span class="cl"><span class="k">\FOR</span> <span class="nb">{</span>each <span class="s">$</span><span class="nb">e </span><span class="nv">\in</span><span class="nb"> l_r^{temp}</span><span class="s">$</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">\FOR</span> <span class="nb">{</span><span class="s">$</span><span class="nb">k </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="nb">:F{S_r}</span><span class="s">$</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">\STATE</span> <span class="s">$</span><span class="nb">free</span><span class="nv">\_</span><span class="nb">slot</span><span class="s">$</span>=<span class="s">$</span><span class="nb">free</span><span class="nv">\_</span><span class="nb">slot</span><span class="o">+</span><span class="nb">|</span><span class="nv">\alpha</span><span class="nb"> _{{c_i}}^{f </span><span class="o">+</span><span class="nb"> k}|</span><span class="s">$</span>
+</span></span><span class="line"><span class="cl">		<span class="k">\FOR</span> <span class="nb">{</span>each <span class="s">$</span><span class="nb">{c_{ac}} </span><span class="nv">\in</span><span class="nb"> AC{S_c}</span><span class="s">$</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">			<span class="k">\IF</span> <span class="nb">{</span>   <span class="s">$</span><span class="nv">\eta</span><span class="nb"> _{c,{c_{ac}}}^{f </span><span class="o">+</span><span class="nb"> k} </span><span class="o">=</span><span class="nb">  </span><span class="o">=</span><span class="nb"> </span><span class="m">2</span><span class="s">$</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">				<span class="k">\STATE</span> <span class="k">\textbf</span><span class="nb">{</span>return<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">			<span class="k">\ELSIF</span> <span class="nb">{</span><span class="s">$</span><span class="nv">\eta</span><span class="nb"> _{c,{c_{ac}}}^{f </span><span class="o">+</span><span class="nb"> k} </span><span class="o">=</span><span class="nb">  </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="s">$</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">				<span class="k">\STATE</span> <span class="s">$</span><span class="nb">CI</span><span class="o">=</span><span class="nb">CI</span><span class="o">+</span><span class="m">1</span><span class="s">$</span>
+</span></span><span class="line"><span class="cl">			<span class="k">\ELSIF</span> <span class="nb">{</span><span class="s">$</span><span class="nv">\eta</span><span class="nb"> _{c,{c_{ac}}}^{f </span><span class="o">+</span><span class="nb"> k} </span><span class="o">=</span><span class="nb">  </span><span class="o">=</span><span class="nb"> </span><span class="m">0</span><span class="s">$</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">				<span class="k">\STATE</span> <span class="k">\textbf</span><span class="nb">{</span>continue<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">			<span class="k">\ENDIF</span>
+</span></span><span class="line"><span class="cl">		<span class="k">\ENDFOR</span>
+</span></span><span class="line"><span class="cl">	<span class="k">\ENDFOR</span>
+</span></span><span class="line"><span class="cl">	<span class="k">\IF</span> <span class="nb">{</span><span class="s">$</span><span class="nb">free</span><span class="nv">\_</span><span class="nb">slot </span><span class="o">=</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="m">0</span><span class="s">$</span><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">		<span class="k">\STATE</span> Estimate the value of fragmentation and <span class="s">$</span><span class="nb">CIFA</span><span class="s">$</span> metric according to <span class="k">\eqref</span><span class="nb">{</span>eq4<span class="nb">}</span><span class="k">\eqref</span><span class="nb">{</span>eq6<span class="nb">}</span><span class="k">\eqref</span><span class="nb">{</span>eq7<span class="nb">}</span>.
+</span></span><span class="line"><span class="cl">	<span class="k">\ELSE</span>
+</span></span><span class="line"><span class="cl">		<span class="k">\STATE</span> <span class="k">\textbf</span><span class="nb">{</span>return<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">\ENDIF</span>
+</span></span><span class="line"><span class="cl"><span class="k">\ENDFOR</span>
+</span></span><span class="line"><span class="cl"><span class="k">\STATE</span> <span class="s">$</span><span class="nb">Flag</span><span class="o">=</span><span class="m">1</span><span class="s">$</span>
+</span></span><span class="line"><span class="cl"><span class="k">\STATE</span> <span class="k">\textbf</span><span class="nb">{</span>return<span class="nb">}</span> <span class="s">$</span><span class="nb">Flag, CIFA</span><span class="s">$</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>algorithmic<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\label</span><span class="nb">{</span>alg2<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>algorithm<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>\begin{algorithm}[!b]：设置算法位置为底部</p>
+<p>\caption：设置算法标题</p>
+<p>\renewcommand{\algorithmicrequire}{\textbf{Input:}}：将require换成input
+\renewcommand{\algorithmicensure}{\textbf{Output:}}：将ensure换成output</p>
+<p>\begin{algorithmic}[1]：算法开始，并从1开始标号</p>
+<p>\REQUIRE：设置输入参数</p>
+<p>\ENSURE：设置输出参数</p>
+<p>\FOR  \ENDFOR  \IF \ELSE \ENDIF：与写伪代码一样</p>
+<p>\STATE：设置这一行的内容</p>
+<p>\label{alg2}：算法的标签，方便引用\ref{alg2}</p>
+<h4 id="列表">列表
+</h4><p>列表这一块的话</p>
+<p>无序列表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>list<span class="nb">}{}{}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>conf.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl<span class="k">\_</span>compsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>conf<span class="k">\_</span>compsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl<span class="k">\_</span>comsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>list<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>有序列表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>conf.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl<span class="k">\_</span>compsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>conf<span class="k">\_</span>compsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl<span class="k">\_</span>comsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>符号列表：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\subsubsection*</span><span class="nb">{</span><span class="k">\bf</span> A simple bulleted list<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>conf.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl<span class="k">\_</span>compsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>conf<span class="k">\_</span>compsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\item</span><span class="nb">{</span>bare<span class="k">\_</span>jrnl<span class="k">\_</span>comsoc.tex<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/list.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="list"
+	
+	
+></p>
+<h4 id="公式">公式
+</h4><p>文章中的正文中出现的公式可以用**$<strong>F{S_{{r_i}}} = \left[ {\frac{{{w_i}}}{{{C_{slot}} \cdot m}}} \right] + GB</strong>$**，</p>
+<p>需要标号的公式可以用如下句柄：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\label</span><span class="nb">{</span>eq1<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">F<span class="nb">{</span>S<span class="nb">_{{</span>r<span class="nb">_</span>i<span class="nb">}}}</span> = <span class="k">\left</span><span class="na">[ {\frac{{{w_i}}}{{{C_{slot}} \cdot m}}} \right]</span> + GB,
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>后续文中需要引用公式的时候可以使用\eqref{eq1}来引用该公式的标号。 如果公式已经在mathtype中编辑好那么可以直接复制公式到tex文件中。</p>
+<blockquote>
+<p>mathtype -&gt; 预置 -&gt;剪切与复制预置 -&gt;选择LaTex</p>
+\[F{S_{{r_i}}} = \left[ {\frac{{{w_i}}}{{{C_{slot}} \cdot m}}} \right] + GB\]</blockquote>
+<p>这样复制过来的直接就是latex公式代码了！！！（记得把[ ]去掉）</p>
+<p><img src="/equation.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="equation"
+	
+	
+></p>
+<h4 id="参考文献">参考文献
+</h4><p>笔者第一次在弄论文的参考文献时踩了很大的坑。我们知道论文的参考文献要满足以下几个条件（以Journal of Lightwave Technology为例）：</p>
+<blockquote>
+<ol>
+<li>参考文献的格式要符合从作者-标题-期刊名-页数-年月份</li>
+<li>参考文献中引用文献的期刊名要保持斜体和缩写</li>
+<li>参考文献中引用文献的作者数量太长的话要缩写或者简写</li>
+<li>文章中的引用文献的序号需要要保持从大到小</li>
+</ol>
+</blockquote>
+<p>我们知道设置参考文献的方式有两种</p>
+<blockquote>
+<p><strong>bibitem：</strong></p>
+<p>想如下的代码形式，使用\bibitem直接在文中把参考文献的格式一一调整好包括作者姓名，期刊名要缩写和斜体。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>thebibliography<span class="nb">}{</span>10<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\bibliographystyle</span><span class="nb">{</span>IEEEtran<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">\bibitem</span><span class="nb">{</span>Bao2023<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">B. Bao, H. Yang, Q. Yao, L. Guan, J. Zhang, and M. Cheriet, “Resource Allocation With Edge-Cloud Collaborative Traffic Prediction in Integrated Radio and Optical Networks,” <span class="nb">{</span><span class="k">\it</span><span class="nb">{</span>IEEE Access<span class="nb">}}</span>, vol. 11, pp. 7067–7077, 2023.
+</span></span><span class="line"><span class="cl"><span class="k">\bibitem</span><span class="nb">{</span>Shao2023<span class="nb">}</span>
+</span></span><span class="line"><span class="cl">J. Shao, S. Zhang, W. Sun, and W. Hu, “Dynamic frequency slot allocation on IP-over-EON access links with multiple-type and time-varying traffic,” <span class="nb">{</span><span class="k">\it</span><span class="nb">{</span>J. Opt. Commun. Netw.<span class="nb">}}</span>, vol. 15, no. 6, pp. 304–317, 2023, doi: 10.1364/JOCN.481355.
+</span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>thebibliography<span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>{10}表示序号需要的宽度，统一使用两位数的宽度序号。</p>
+<p>\bibliographystyle{IEEEtran}表示参考文献风格</p>
+<p>{Bao2023}表示该文献的标签并且在所有文献中必须是唯一的，引用时使用\cite{Bao2023}</p>
+<p>所有文献的形式编辑好以后直接运行就行，<strong>参考文献的顺序会按照编辑好的顺序排序</strong>。</p>
+</blockquote>
+<blockquote>
+<p><strong>bibtex</strong>：</p>
+<p>这种方法需要建立参考文献数据库，引用的时候调用所需要的参考文献。每篇文献有它自己的引用的bib文件(可以在网上下载)。下面就是包含两篇文章的文献数据库（是不是有点想json文件的形式，属性&ndash;字段，python里面也叫做字典）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl">@ARTICLE<span class="nb">{</span>9611289,
+</span></span><span class="line"><span class="cl">author=<span class="nb">{</span>Zhang, Juan and Bao, Bowen and Yao, Qiuyan and Ren, Danping and Hu, Jinhua and Zhao, Jijun<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">journal=<span class="nb">{</span>IEEE Access<span class="nb">}</span>, 
+</span></span><span class="line"><span class="cl">title=<span class="nb">{</span>Resource Allocation Scheme Based on Complete Planning Process for Immediate and Advance Reservation in SDM-EONs<span class="nb">}</span>, 
+</span></span><span class="line"><span class="cl">year=<span class="nb">{</span>2021<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">volume=<span class="nb">{</span>9<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">number=<span class="nb">{}</span>,
+</span></span><span class="line"><span class="cl">pages=<span class="nb">{</span>153575-153585<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">keywords=<span class="nb">{</span>Resource management;Planning;Optical fiber networks;WDM networks;Routing;Optimization;Quality of service;Advanced reservation (AR);blocking probability;complete planning process;elastic optical networks (EONs);immediate reservation (IR);space division multiplexing (SDM)<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">doi=<span class="nb">{</span>10.1109/ACCESS.2021.3127317<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">}</span>
+</span></span><span class="line"><span class="cl">@article<span class="nb">{</span>Ma2023,
+</span></span><span class="line"><span class="cl">author = <span class="nb">{</span>Ma, Yudong and Yang, Xin and Sun, Qang and Zhao, Yue<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">doi = <span class="nb">{</span>10.1364/JOCN.496417<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">issn = <span class="nb">{</span>19430639<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">journal = <span class="nb">{</span>Journal of Optical Communications and Networking<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">number = <span class="nb">{</span>9<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">pages = <span class="nb">{</span>687--699<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">title = <span class="nb">{{</span>Dynamic resource allocation for multicast in SDM-EON: time-decoupled dynamic path cross talk and joint weight<span class="nb">}}</span>,
+</span></span><span class="line"><span class="cl">volume = <span class="nb">{</span>15<span class="nb">}</span>,
+</span></span><span class="line"><span class="cl">year = <span class="nb">{</span>2023<span class="nb">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>把所有文献的bib文件整合成一个文献数据库并放在模板文件同级目录下，在参考文献的代码部分加上\bibliography{bibfile}就可以调用对应的bibfile.bib文献数据库，当在文档中想使用引用时, 插入 LaTeX 命令\cite{9611289，Ma2023}。<strong>参考文献的排序会按照引用的先后顺序排列好</strong>。</p>
+<p>最后</p>
+<ol>
+<li>用LaTeX编译你的 .tex 文件 , 这是生成一个 .aux 的文件, 这告诉 BibTeX 将使用那些应用；</li>
+<li>用BibTeX 编译 .bib 文件；</li>
+<li>再次用LaTeX 编译你的 .tex 文件，这个时候在文档中已经包含了参考文献，但此时引用的编号可能不正确；</li>
+<li>最后用 LaTeX 编译你的 .tex 文件，如果一切顺利的话, 这是所有东西都已正常了.</li>
+</ol>
+</blockquote>
+<p>在理解上述的两种方法之后，笔者便思考两者哪一个能更快的实现上述的要求。思考一番后，第二种方法看起来确实是比较便捷。因为这种方法不仅不需要手动去调整参考文献的格式(自动生成IEEEtrans的风格)，而且参考文献的排序会按照引用的先后顺序排列好。</p>
+<p>为了快速的收集bib文件，笔者选择了一款文献管理工具<a class="link" href="https://www.mendeley.com/autoupdates/installers/1.19.5"  target="_blank" rel="noopener"
+    >mendeley.com/autoupdates/installers/1.19.5</a>，只需把参考文献导入<strong>mendeley</strong>，它能够快速的导出所有文献的bib文件并直接生成文献数据库。它也可以查看对应期刊的参考文献风格。</p>
+<p><strong>最后出现以下结果！！！</strong></p>
+<p><img src="/fail.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="fail"
+	
+	
+></p>
+<p>可以看到图中生成的参考文献并没有满足我说的要求，在看了一下bib文件中的内容之后，发现bibtex生成的参考文献是根据bib中每个文献对应的属性字段来生成的。而有些文章的属性字段缺失，作者也不能保证缩写和简写，并且期刊名也不能缩写。这可能需要对每一篇文章的bib内容调整。笔者一直也在寻找解决的办法，导致浪费了大量的时间。<strong>如果您有更好的解决方案，欢迎与笔者联系！</strong></p>
+<p><strong>在与导师商量的之后，最后决定用第一种方法生成参考文献</strong></p>
+<p>第一种方法看似内容和格式也要自己一个一个的敲上去，但是笔者在用mendeley的时候可以查看IEEEtrans的风格的参考文献，**发现格式非常统一和正确！！！**于是直接从mendeley把参考文献的内容(Formatted Citation)直接导入来并粘贴到模板中就行了（不是bib文件）</p>
+<p><img src="/mendeley.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="mendeley"
+	
+	
+></p>
+<p>但是还有一个难题就是，刚刚说了第一种方法参考文献生成的时候是按照编辑的顺序排列的，文章中引用的参考文献的需要顺序并没有按照从小到大，所以说我们还需要对这些bibitem调整顺序以便确保文中的引用文献的序号需要从小到大。</p>
+<p>这里介绍一个<a class="link" href="https://www.cnblogs.com/lipoicyclic/p/17384272.html"  target="_blank" rel="noopener"
+    >使用LaTeX的bibitems引用时按照引用顺序对文献进行编号 - 脂环 - 博客园</a>排序方法能根据引用的顺序把参考文献调整好。<strong>最后生成的参考文献的结果要检查一下是否格式正确！</strong></p>
+<h2 id="总结">总结
+</h2><p>最后，本文主要对在使用latex去撰写论文时如何自定义自己的公式，图片，表格，算法，列表，和参考文献提供了笔者所使用的方法和一些细节并给出了一些建议。由于笔者也是第一次使用latex撰写论文，每个细节都是自己上网或者AI搜索解决的，一些方面的方法和细节无法做到最优。如果读者有更好的想法或者有什么问题欢迎与我讨论。(qq: 1693592330)</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/">
+        
+        
+            <div class="article-image">
+                <img src="/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/hugo.681dd06eaf16f32ab6d77537980efb25_hu13006277407028264280.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post hugo博客网站"
+                        
+                        data-hash="md5-aB3Qbq8W8yq213U3mA77JQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">hugo博客网站</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 进击的小明
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
