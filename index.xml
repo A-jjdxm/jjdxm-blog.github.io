@@ -7,64 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>进击的小明</copyright>
-        <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jjdxm.cn/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>关于我</title>
-        <link>https://www.jjdxm.cn/about/</link>
-        <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.jjdxm.cn/about/</guid>
-        <description>&lt;p&gt;一名菜鸟在读硕士生，我会在这里分享我的学习经历和生活经历&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;邮箱: &lt;a class=&#34;link&#34; href=&#34;mailto:1693592330@qq.com&#34; &gt;1693592330@qq.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。是造物者之无尽藏也 &amp;mdash;&amp;mdash; 《赤壁赋》&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>hugo博客网站</title>
-        <link>https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
-        <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
-        <description>&lt;img src="https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/hugo.png" alt="Featured image of post hugo博客网站" /&gt;&lt;p&gt;在漫长的学习和工作之路中，难免会有一些技术问题和心得。正所谓好记性不如烂笔头。在朋友的介绍hugo后可以快速便捷的搭建自己的静态网站。于是笔者决定搭建自己的博客网站。&lt;/p&gt;
-&lt;p&gt;本博客网站是基于&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hugo&lt;/a&gt;生成的&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;快速静态网站生成器&lt;/strong&gt;：Hugo 能够将内容转换为 HTML 文件，与动态网站生成器不同，Hugo 在创建内容时就完成页面的构建，而不是每次用户请求时都动态生成页面。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;跨平台运行&lt;/strong&gt;：Hugo 可以在多种操作系统上运行，包括 Mac OS X、Linux、Windows 等。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;主题支持&lt;/strong&gt;：Hugo 支持完整的主题系统，允许用户通过更换主题来改变网站的外观。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;内容管理&lt;/strong&gt;：Hugo 支持 Markdown 语法，使得内容编写变得简单，同时也支持 TOML、YAML 和 JSON 格式的元数据。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;部署灵活性&lt;/strong&gt;：Hugo 生成的网站可以部署在任何平台上，包括 Heroku、GoDaddy、DreamHost、GitHub Pages、Google Cloud Storage、Amazon S3 和 CloudFront 等，并且与 CDN 良好协作。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;无依赖&lt;/strong&gt;：Hugo 网站不需要依赖昂贵的运行时环境，如 Ruby、Python 或 PHP，也不需要数据库。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;本网站选用的主题是&lt;a class=&#34;link&#34; href=&#34;https://g1en.site/hugo-theme-dream/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;dream&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;快来搭建自己的博客网站！！！&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>归档</title>
-        <link>https://www.jjdxm.cn/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.jjdxm.cn/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>搜索</title>
-        <link>https://www.jjdxm.cn/search/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.jjdxm.cn/search/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Tue, 18 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jjdxm.cn/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>学术论文latex--以IEEEtrans为例子</title>
         <link>https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Tue, 18 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/</guid>
-        <description>&lt;img src="https://www.jjdxm.cn/IEEE.png" alt="Featured image of post 学术论文latex--以IEEEtrans为例子" /&gt;&lt;h2 id=&#34;背景&#34;&gt;背景
+        <description>&lt;img src="https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/IEEE.png" alt="Featured image of post 学术论文latex--以IEEEtrans为例子" /&gt;&lt;h2 id=&#34;背景&#34;&gt;背景
 &lt;/h2&gt;&lt;p&gt;笔者第一次写学术论文，其研究方向是弹性光网络，本次投递的期刊是JLT。在后续调整论文格式时候使用LATEX来写。而本文主要描述了在&lt;strong&gt;使用LATEX写论文&lt;/strong&gt;时候，一些论文注意细节和LATEX的使用用法。以便帮助后续学弟和学妹们更快的完成论文的撰写。&lt;/p&gt;
 &lt;h2 id=&#34;准备工作&#34;&gt;准备工作
 &lt;/h2&gt;&lt;h4 id=&#34;latrex下载&#34;&gt;LATREX下载
@@ -81,39 +30,51 @@
     &gt;IEEE-Template Selector&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;IEEE里面的期刊通过上述链接选择对应的期刊下载LATEX模板。如果不是，则百度对应的期刊名到官网下载对应的LATEX模板。&lt;/p&gt;
 &lt;p&gt;这里我选择的是&lt;strong&gt;Journal of Lightwave Technology&lt;/strong&gt;期刊的LATEX模板&lt;strong&gt;IEEEtrans&lt;/strong&gt;。下载内容如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/latex_catogarey.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey.png&#34;
+	width=&#34;634&#34;
+	height=&#34;174&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey_hu426615256859894451.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey_hu2729766791285593957.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;latex_catogarey&#34;
 	
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;364&#34;
+		data-flex-basis=&#34;874px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;IEEEtran.cls&lt;/strong&gt;提供给模板的接口，&lt;strong&gt;bare_jrnl_new_sample4.tex&lt;/strong&gt;是IEEEtrans对应的期刊的latex模板，点击打开bare_jrnl_new_sample4.tex并选择&lt;strong&gt;pdfLaTex&lt;/strong&gt;编译运行，则会输出对应的pdf。(笔者是用latex自带的Texwork打开的，可以用其它编辑器打开)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/latex_sample.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_sample.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1080&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_sample_hu5091228048942398489.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_sample_hu10007303227763451448.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;latex_sample&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;latex论文撰写&#34;&gt;LATEX论文撰写
 &lt;/h2&gt;&lt;p&gt;一篇论文的结构在模板里面已经非常清晰了，文件里面的头文件基本上不用变化。只需找到模板中对应的代码段(title, abstract, author, IEEEkeywords, section, subsection, &amp;hellip;)把内容填进去。如果有什么不懂的可以百度或者查看目录下面的New_IEEEtran_how-to.pdf帮助文档，笔者这里主要介绍一些需要自定义并且可能会出现问题的地方。&lt;/p&gt;
 &lt;h4 id=&#34;图片&#34;&gt;图片
 &lt;/h4&gt;&lt;p&gt;为了方便管理图片，这里我这里把整篇论文要用到的图片都放在模板路径下面的figures文件夹里，然后再模板文件中**\begin{document}&lt;strong&gt;上一行加入&lt;/strong&gt;\graphicspath{{figures/}}**，这样就规定了图片的路径。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/latex_catogarey1.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey1.png&#34;
+	width=&#34;624&#34;
+	height=&#34;172&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey1_hu2728462177481139086.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey1_hu10938505611313247287.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;latex_catogarey1&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;362&#34;
+		data-flex-basis=&#34;870px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;要在论文中插入一张图片代码如下：&lt;/strong&gt;&lt;/p&gt;
@@ -141,14 +102,18 @@
 &lt;p&gt;&lt;strong&gt;fig1.pdf&lt;/strong&gt;：表示插入的图片文件名，上面已经设置好图片的路径，所以这里直接填入文件名就行&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\caption&lt;/strong&gt;：设置图片的标题&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\label{fig1}&lt;/strong&gt;：设置图片的唯一标志，为了方便文中引用该图片。这里笔者设置的名称是fig1，使用\ref{fig1}便可以引用&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/fig1.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig1.png&#34;
+	width=&#34;384&#34;
+	height=&#34;405&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig1_hu6392357827364575127.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig1_hu12488391851943939212.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;fig1&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;94&#34;
+		data-flex-basis=&#34;227px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;要在论文中插入多张图片代码如下(竖排)：&lt;/strong&gt;&lt;/p&gt;
@@ -189,14 +154,18 @@
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;！t&lt;/strong&gt;:系统忽略“美学”标准，放置在顶部(这里加不加！感觉没有上面区别)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\hfil&lt;/strong&gt;：填充两张图片中间的空白&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\subfloat&lt;/strong&gt;：设置子图&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/fig2.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig2.png&#34;
+	width=&#34;386&#34;
+	height=&#34;658&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig2_hu6449154920480267683.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig2_hu4714456406032045504.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;fig2&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;58&#34;
+		data-flex-basis=&#34;140px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;要在论文中插入多张图片代码如下(横排)：&lt;/strong&gt;&lt;/p&gt;
@@ -241,14 +210,18 @@
 &lt;/div&gt;&lt;p&gt;&lt;em&gt;&lt;em&gt;\begin{figure&lt;/em&gt;}&lt;/em&gt;*：设置跨栏的图片&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\hfil&lt;/strong&gt;：填充两张图片中间的空白&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;\\&lt;/strong&gt;：图片换行&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/fig3.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig3.png&#34;
+	width=&#34;772&#34;
+	height=&#34;594&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig3_hu13528553443296805518.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig3_hu7657300146167365499.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;fig3&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;129&#34;
+		data-flex-basis=&#34;311px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;表格&#34;&gt;表格
@@ -316,14 +289,18 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;tabular&lt;span class=&#34;nb&#34;&gt;}{&lt;/span&gt;| l | p&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;6cm&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;|&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/table.png&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/table.png&#34;
+	width=&#34;350&#34;
+	height=&#34;172&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/table_hu2663016308275507717.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/table_hu1584216654487798539.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;image-20250218215507591&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;203&#34;
+		data-flex-basis=&#34;488px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;算法&#34;&gt;算法
@@ -476,14 +453,18 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{&lt;/span&gt;itemize&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/list.png&#34;
-	
-	
-	
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/list.png&#34;
+	width=&#34;262&#34;
+	height=&#34;298&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/list_hu10048385793596416459.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/list_hu8658355032124937672.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;list&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;87&#34;
+		data-flex-basis=&#34;211px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;公式&#34;&gt;公式
@@ -508,14 +489,18 @@
 &lt;p&gt;mathtype -&amp;gt; 预置 -&amp;gt;剪切与复制预置 -&amp;gt;选择LaTex&lt;/p&gt;
 \[F{S_{{r_i}}} = \left[ {\frac{{{w_i}}}{{{C_{slot}} \cdot m}}} \right] + GB\]&lt;/blockquote&gt;
 &lt;p&gt;这样复制过来的直接就是latex公式代码了！！！（记得把[ ]去掉）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/equation.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/equation.png&#34;
+	width=&#34;272&#34;
+	height=&#34;44&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/equation_hu15957297455287428575.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/equation_hu4311690769109893382.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;equation&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;618&#34;
+		data-flex-basis=&#34;1483px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;参考文献&#34;&gt;参考文献
@@ -623,27 +608,35 @@
 &lt;p&gt;为了快速的收集bib文件，笔者选择了一款文献管理工具&lt;a class=&#34;link&#34; href=&#34;https://www.mendeley.com/autoupdates/installers/1.19.5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;mendeley.com/autoupdates/installers/1.19.5&lt;/a&gt;，只需把参考文献导入&lt;strong&gt;mendeley&lt;/strong&gt;，它能够快速的导出所有文献的bib文件并直接生成文献数据库。它也可以查看对应期刊的参考文献风格。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;最后出现以下结果！！！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/fail.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fail.png&#34;
+	width=&#34;835&#34;
+	height=&#34;395&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fail_hu4172203745718012812.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fail_hu1080556565057328728.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;fail&#34;
 	
 	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;211&#34;
+		data-flex-basis=&#34;507px&#34;
+	
 &gt;&lt;/p&gt;
 &lt;p&gt;可以看到图中生成的参考文献并没有满足我说的要求，在看了一下bib文件中的内容之后，发现bibtex生成的参考文献是根据bib中每个文献对应的属性字段来生成的。而有些文章的属性字段缺失，作者也不能保证缩写和简写，并且期刊名也不能缩写。这可能需要对每一篇文章的bib内容调整。笔者一直也在寻找解决的办法，导致浪费了大量的时间。&lt;strong&gt;如果您有更好的解决方案，欢迎与笔者联系！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;在与导师商量的之后，最后决定用第一种方法生成参考文献&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;第一种方法看似内容和格式也要自己一个一个的敲上去，但是笔者在用mendeley的时候可以查看IEEEtrans的风格的参考文献，**发现格式非常统一和正确！！！**于是直接从mendeley把参考文献的内容(Formatted Citation)直接导入来并粘贴到模板中就行了（不是bib文件）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/mendeley.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/mendeley.png&#34;
+	width=&#34;1540&#34;
+	height=&#34;858&#34;
+	srcset=&#34;https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/mendeley_hu7846454081363889860.png 480w, https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/mendeley_hu3484569772792652410.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;mendeley&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;430px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;但是还有一个难题就是，刚刚说了第一种方法参考文献生成的时候是按照编辑的顺序排列的，文章中引用的参考文献的需要顺序并没有按照从小到大，所以说我们还需要对这些bibitem调整顺序以便确保文中的引用文献的序号需要从小到大。&lt;/p&gt;
@@ -652,6 +645,57 @@
 &lt;h2 id=&#34;总结&#34;&gt;总结
 &lt;/h2&gt;&lt;p&gt;最后，本文主要对在使用latex去撰写论文时如何自定义自己的公式，图片，表格，算法，列表，和参考文献提供了笔者所使用的方法和一些细节并给出了一些建议。由于笔者也是第一次使用latex撰写论文，每个细节都是自己上网或者AI搜索解决的，一些方面的方法和细节无法做到最优。如果读者有更好的想法或者有什么问题欢迎与我讨论。(qq: 1693592330)&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>关于我</title>
+        <link>https://www.jjdxm.cn/about/</link>
+        <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jjdxm.cn/about/</guid>
+        <description>&lt;p&gt;一名菜鸟在读硕士生，我会在这里分享我的学习经历和生活经历&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;邮箱: &lt;a class=&#34;link&#34; href=&#34;mailto:1693592330@qq.com&#34; &gt;1693592330@qq.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，取之无禁，用之不竭。是造物者之无尽藏也 &amp;mdash;&amp;mdash; 《赤壁赋》&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>hugo博客网站</title>
+        <link>https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</link>
+        <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/</guid>
+        <description>&lt;img src="https://www.jjdxm.cn/p/hugo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/hugo.png" alt="Featured image of post hugo博客网站" /&gt;&lt;p&gt;在漫长的学习和工作之路中，难免会有一些技术问题和心得。正所谓好记性不如烂笔头。在朋友的介绍hugo后可以快速便捷的搭建自己的静态网站。于是笔者决定搭建自己的博客网站。&lt;/p&gt;
+&lt;p&gt;本博客网站是基于&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo&lt;/a&gt;生成的&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;快速静态网站生成器&lt;/strong&gt;：Hugo 能够将内容转换为 HTML 文件，与动态网站生成器不同，Hugo 在创建内容时就完成页面的构建，而不是每次用户请求时都动态生成页面。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;跨平台运行&lt;/strong&gt;：Hugo 可以在多种操作系统上运行，包括 Mac OS X、Linux、Windows 等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;主题支持&lt;/strong&gt;：Hugo 支持完整的主题系统，允许用户通过更换主题来改变网站的外观。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;内容管理&lt;/strong&gt;：Hugo 支持 Markdown 语法，使得内容编写变得简单，同时也支持 TOML、YAML 和 JSON 格式的元数据。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署灵活性&lt;/strong&gt;：Hugo 生成的网站可以部署在任何平台上，包括 Heroku、GoDaddy、DreamHost、GitHub Pages、Google Cloud Storage、Amazon S3 和 CloudFront 等，并且与 CDN 良好协作。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;无依赖&lt;/strong&gt;：Hugo 网站不需要依赖昂贵的运行时环境，如 Ruby、Python 或 PHP，也不需要数据库。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;本网站选用的主题是&lt;a class=&#34;link&#34; href=&#34;https://g1en.site/hugo-theme-dream/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;dream&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;快来搭建自己的博客网站！！！&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>归档</title>
+        <link>https://www.jjdxm.cn/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jjdxm.cn/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>搜索</title>
+        <link>https://www.jjdxm.cn/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jjdxm.cn/search/</guid>
+        <description></description>
         </item>
         <item>
         <title>友情链接</title>

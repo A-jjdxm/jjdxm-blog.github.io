@@ -10,10 +10,10 @@
 <meta property='og:description' content="第一次写学术论文套用IEEEtrans模板以及一些踩坑的地方">
 <meta property='og:url' content='https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/'>
 <meta property='og:site_name' content='进击的小明博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='og:image' content='https://www.jjdxm.cn/IEEE.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-02-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/IEEE.png' />
 <meta name="twitter:title" content="学术论文latex--以IEEEtrans为例子">
 <meta name="twitter:description" content="第一次写学术论文套用IEEEtrans模板以及一些踩坑的地方"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://www.jjdxm.cn/IEEE.png' />
+    <meta name="twitter:image" content='https://www.jjdxm.cn/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/IEEE.png' />
     </head>
     <body class="
     article-page
@@ -330,8 +330,12 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/">
-                
-                    <img src="/IEEE.png" loading="lazy" alt="Featured image of post 学术论文latex--以IEEEtrans为例子" />
+                <img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/IEEE_hu16051346112629247771.png"
+                        srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/IEEE_hu16051346112629247771.png 800w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/IEEE_hu16791398639803628694.png 1600w"
+                        width="800" 
+                        height="284" 
+                        loading="lazy"
+                        alt="Featured image of post 学术论文latex--以IEEEtrans为例子" />
                 
             </a>
         </div>
@@ -365,6 +369,19 @@
     
     
     <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 18, 2025</time>
+            </div>
         
 
         
@@ -410,39 +427,51 @@
     >IEEE-Template Selector</a></p>
 <p>IEEE里面的期刊通过上述链接选择对应的期刊下载LATEX模板。如果不是，则百度对应的期刊名到官网下载对应的LATEX模板。</p>
 <p>这里我选择的是<strong>Journal of Lightwave Technology</strong>期刊的LATEX模板<strong>IEEEtrans</strong>。下载内容如下图：</p>
-<p><img src="/latex_catogarey.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey.png"
+	width="634"
+	height="174"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey_hu426615256859894451.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey_hu2729766791285593957.png 1024w"
 	loading="lazy"
 	
 		alt="latex_catogarey"
 	
 	
+		class="gallery-image" 
+		data-flex-grow="364"
+		data-flex-basis="874px"
+	
 ></p>
 <p><strong>IEEEtran.cls</strong>提供给模板的接口，<strong>bare_jrnl_new_sample4.tex</strong>是IEEEtrans对应的期刊的latex模板，点击打开bare_jrnl_new_sample4.tex并选择<strong>pdfLaTex</strong>编译运行，则会输出对应的pdf。(笔者是用latex自带的Texwork打开的，可以用其它编辑器打开)</p>
-<p><img src="/latex_sample.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_sample.png"
+	width="1920"
+	height="1080"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_sample_hu5091228048942398489.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_sample_hu10007303227763451448.png 1024w"
 	loading="lazy"
 	
 		alt="latex_sample"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
 	
 ></p>
 <h2 id="latex论文撰写">LATEX论文撰写
 </h2><p>一篇论文的结构在模板里面已经非常清晰了，文件里面的头文件基本上不用变化。只需找到模板中对应的代码段(title, abstract, author, IEEEkeywords, section, subsection, &hellip;)把内容填进去。如果有什么不懂的可以百度或者查看目录下面的New_IEEEtran_how-to.pdf帮助文档，笔者这里主要介绍一些需要自定义并且可能会出现问题的地方。</p>
 <h4 id="图片">图片
 </h4><p>为了方便管理图片，这里我这里把整篇论文要用到的图片都放在模板路径下面的figures文件夹里，然后再模板文件中**\begin{document}<strong>上一行加入</strong>\graphicspath{{figures/}}**，这样就规定了图片的路径。</p>
-<p><img src="/latex_catogarey1.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey1.png"
+	width="624"
+	height="172"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey1_hu2728462177481139086.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/latex_catogarey1_hu10938505611313247287.png 1024w"
 	loading="lazy"
 	
 		alt="latex_catogarey1"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="362"
+		data-flex-basis="870px"
 	
 ></p>
 <p><strong>要在论文中插入一张图片代码如下：</strong></p>
@@ -470,14 +499,18 @@
 <p><strong>fig1.pdf</strong>：表示插入的图片文件名，上面已经设置好图片的路径，所以这里直接填入文件名就行</p>
 <p><strong>\caption</strong>：设置图片的标题</p>
 <p><strong>\label{fig1}</strong>：设置图片的唯一标志，为了方便文中引用该图片。这里笔者设置的名称是fig1，使用\ref{fig1}便可以引用</p>
-<p><img src="/fig1.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig1.png"
+	width="384"
+	height="405"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig1_hu6392357827364575127.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig1_hu12488391851943939212.png 1024w"
 	loading="lazy"
 	
 		alt="fig1"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="94"
+		data-flex-basis="227px"
 	
 ></p>
 <p><strong>要在论文中插入多张图片代码如下(竖排)：</strong></p>
@@ -518,14 +551,18 @@
 </div><p><strong>！t</strong>:系统忽略“美学”标准，放置在顶部(这里加不加！感觉没有上面区别)</p>
 <p><strong>\hfil</strong>：填充两张图片中间的空白</p>
 <p><strong>\subfloat</strong>：设置子图</p>
-<p><img src="/fig2.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig2.png"
+	width="386"
+	height="658"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig2_hu6449154920480267683.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig2_hu4714456406032045504.png 1024w"
 	loading="lazy"
 	
 		alt="fig2"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="58"
+		data-flex-basis="140px"
 	
 ></p>
 <p><strong>要在论文中插入多张图片代码如下(横排)：</strong></p>
@@ -570,14 +607,18 @@
 </div><p><em><em>\begin{figure</em>}</em>*：设置跨栏的图片</p>
 <p><strong>\hfil</strong>：填充两张图片中间的空白</p>
 <p><strong>\\</strong>：图片换行</p>
-<p><img src="/fig3.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig3.png"
+	width="772"
+	height="594"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig3_hu13528553443296805518.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fig3_hu7657300146167365499.png 1024w"
 	loading="lazy"
 	
 		alt="fig3"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="129"
+		data-flex-basis="311px"
 	
 ></p>
 <h4 id="表格">表格
@@ -645,14 +686,18 @@
 <pre tabindex="0" class="chroma"><code class="language-latex" data-lang="latex"><span class="line"><span class="cl"><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>| l | p<span class="nb">{</span>6cm<span class="nb">}</span>|<span class="nb">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img src="/table.png"
-	
-	
-	
+</div><p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/table.png"
+	width="350"
+	height="172"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/table_hu2663016308275507717.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/table_hu1584216654487798539.png 1024w"
 	loading="lazy"
 	
 		alt="image-20250218215507591"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="203"
+		data-flex-basis="488px"
 	
 ></p>
 <h4 id="算法">算法
@@ -805,14 +850,18 @@
 </span></span><span class="line"><span class="cl"><span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img src="/list.png"
-	
-	
-	
+</div><p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/list.png"
+	width="262"
+	height="298"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/list_hu10048385793596416459.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/list_hu8658355032124937672.png 1024w"
 	loading="lazy"
 	
 		alt="list"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="87"
+		data-flex-basis="211px"
 	
 ></p>
 <h4 id="公式">公式
@@ -837,14 +886,18 @@
 <p>mathtype -&gt; 预置 -&gt;剪切与复制预置 -&gt;选择LaTex</p>
 \[F{S_{{r_i}}} = \left[ {\frac{{{w_i}}}{{{C_{slot}} \cdot m}}} \right] + GB\]</blockquote>
 <p>这样复制过来的直接就是latex公式代码了！！！（记得把[ ]去掉）</p>
-<p><img src="/equation.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/equation.png"
+	width="272"
+	height="44"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/equation_hu15957297455287428575.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/equation_hu4311690769109893382.png 1024w"
 	loading="lazy"
 	
 		alt="equation"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="618"
+		data-flex-basis="1483px"
 	
 ></p>
 <h4 id="参考文献">参考文献
@@ -952,27 +1005,35 @@
 <p>为了快速的收集bib文件，笔者选择了一款文献管理工具<a class="link" href="https://www.mendeley.com/autoupdates/installers/1.19.5"  target="_blank" rel="noopener"
     >mendeley.com/autoupdates/installers/1.19.5</a>，只需把参考文献导入<strong>mendeley</strong>，它能够快速的导出所有文献的bib文件并直接生成文献数据库。它也可以查看对应期刊的参考文献风格。</p>
 <p><strong>最后出现以下结果！！！</strong></p>
-<p><img src="/fail.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fail.png"
+	width="835"
+	height="395"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fail_hu4172203745718012812.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/fail_hu1080556565057328728.png 1024w"
 	loading="lazy"
 	
 		alt="fail"
 	
 	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="507px"
+	
 ></p>
 <p>可以看到图中生成的参考文献并没有满足我说的要求，在看了一下bib文件中的内容之后，发现bibtex生成的参考文献是根据bib中每个文献对应的属性字段来生成的。而有些文章的属性字段缺失，作者也不能保证缩写和简写，并且期刊名也不能缩写。这可能需要对每一篇文章的bib内容调整。笔者一直也在寻找解决的办法，导致浪费了大量的时间。<strong>如果您有更好的解决方案，欢迎与笔者联系！</strong></p>
 <p><strong>在与导师商量的之后，最后决定用第一种方法生成参考文献</strong></p>
 <p>第一种方法看似内容和格式也要自己一个一个的敲上去，但是笔者在用mendeley的时候可以查看IEEEtrans的风格的参考文献，**发现格式非常统一和正确！！！**于是直接从mendeley把参考文献的内容(Formatted Citation)直接导入来并粘贴到模板中就行了（不是bib文件）</p>
-<p><img src="/mendeley.png"
-	
-	
-	
+<p><img src="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/mendeley.png"
+	width="1540"
+	height="858"
+	srcset="/p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/mendeley_hu7846454081363889860.png 480w, /p/%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87latex--%E4%BB%A5ieeetrans%E4%B8%BA%E4%BE%8B%E5%AD%90/mendeley_hu3484569772792652410.png 1024w"
 	loading="lazy"
 	
 		alt="mendeley"
 	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="430px"
 	
 ></p>
 <p>但是还有一个难题就是，刚刚说了第一种方法参考文献生成的时候是按照编辑的顺序排列的，文章中引用的参考文献的需要顺序并没有按照从小到大，所以说我们还需要对这些bibitem调整顺序以便确保文中的引用文献的序号需要从小到大。</p>
