@@ -6,6 +6,18 @@
         <description>Recent content in LINUX on 进击的小明博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>进击的小明</copyright><atom:link href="https://www.jjdxm.cn/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>进击的小明</copyright>
+        <lastBuildDate>Wed, 26 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jjdxm.cn/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>超算资源调度（Linux）</title>
+        <link>https://www.jjdxm.cn/p/%E8%B6%85%E7%AE%97%E8%B5%84%E6%BA%90%E8%B0%83%E5%BA%A6linux/</link>
+        <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jjdxm.cn/p/%E8%B6%85%E7%AE%97%E8%B5%84%E6%BA%90%E8%B0%83%E5%BA%A6linux/</guid>
+        <description>&lt;img src="https://www.jjdxm.cn/p/%E8%B6%85%E7%AE%97%E8%B5%84%E6%BA%90%E8%B0%83%E5%BA%A6linux/%E8%B6%85%E7%AE%97.png" alt="Featured image of post 超算资源调度（Linux）" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;本文主要介绍关于超算的架构，以及如何调度超算中的计算资源。在资源调度的过程中会涉及到一些Linux命令，&lt;/p&gt;
+&lt;p&gt;后续慢慢补充&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
